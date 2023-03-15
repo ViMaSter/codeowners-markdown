@@ -1,0 +1,6 @@
+# COMMENT THAT'S IGNORED FOLLOWED BY EMPTY LINE
+
+# Multiple whitespace is condensed into a single space in the output
+*            vincent@mahn.ke   user2@example.org
+
+*.js         someone@example.org

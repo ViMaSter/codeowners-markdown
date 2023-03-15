@@ -1,0 +1,27 @@
+{
+  "name": "codeowners-markdown",
+  "version": "1.0.0",
+  "description": "Generate a markdown file displaying CODEOWNERS of multiple repositories",
+  "main": "main.js",
+  "engines": {
+    "node": ">=19.0.0",
+    "npm": ">=9.2.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViMaSter/codeowners-markdown.git"
+  },
+  "author": "Vincent Mahnke (vincent@mahn.ke)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ViMaSter/codeowners-markdown/issues"
+  },
+  "homepage": "https://github.com/ViMaSter/codeowners-markdown#readme",
+  "dependencies": {
+    "glob": "^9.3.0"
+  }
+}
