@@ -1,6 +1,6 @@
 # CODEOWNERS Markdown Generator
 
-Reference input format: `/tests/fixture`
+Reference input format: `/tests/fixture`  
 Reference output format: `/tests/expected.md`
 
 ## Usage
