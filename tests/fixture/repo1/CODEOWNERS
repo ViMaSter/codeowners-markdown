@@ -2,5 +2,6 @@
 
 # Multiple whitespace is condensed into a single space in the output
 *            vincent@mahn.ke   user2@example.org
-
+# Empty lines with whitespace are ignored
+   
 *.js         someone@example.org

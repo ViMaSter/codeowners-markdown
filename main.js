@@ -4,6 +4,6 @@ import path from 'node:path';
 
 const __dirname = path.resolve();
 const relativeSourceDirectoryPath = process.argv[2];
-const absoluteSourceDirectoryPath = __dirname+"/"+relativeSourceDirectoryPath;
+const absoluteSourceDirectoryPath = path.resolve(__dirname, relativeSourceDirectoryPath);
 const output = generate(absoluteSourceDirectoryPath);
 console.log(output);

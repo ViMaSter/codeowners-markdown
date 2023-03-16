@@ -10,10 +10,10 @@ const contentToMarkdown = (fileContent) => {
     // take rest as value
     const lines = fileContent.replace("\n", os.EOL).replace("\r", os.EOL).split(os.EOL);
     const output = lines
-        .filter(line => !line.startsWith('#') && line.length > 0)
+        .filter(line => !line.startsWith('#') && line.trim().length > 0)
         .map(line => {
             const [key, ...value] = line.split(/\s+/);
-            return `| ${key} | ${value.map(entry=>entry.trim()).join(' ')} |`;
+            return `| \`${key}\` | \`${value.map(entry=>entry.trim()).join('`, `')}\` |`;
         });
         output.unshift('| --- | --- |');
         output.unshift('| Files | Owner |')
@@ -35,8 +35,6 @@ export default function generate(absoluteSourceDirectoryPath) {
     
     // get all CODEOWNERS in path and all subdirectories
     const files = glob.sync('**/CODEOWNERS', { cwd: absoluteSourceDirectoryPath }).sort();
-    console.log(absoluteSourceDirectoryPath);
-    console.log(files);
     // assign to object with relative path as key and content as value
     const ownersTableByDirectory = files.map(file => [
         file.replace('/CODEOWNERS', ''),

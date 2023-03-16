@@ -6,14 +6,14 @@
 
 | Files | Owner |
 | --- | --- |
-| * | vincent@mahn.ke user2@example.org |
-| *.js | someone@example.org |
+| `*` | `vincent@mahn.ke`, `user2@example.org` |
+| `*.js` | `someone@example.org` |
 
 
 ## repo2
 
 | Files | Owner |
 | --- | --- |
-| * | someone@example.org |
-| *.yml | vincent@mahn.ke user2@example.org |
+| `*` | `someone@example.org` |
+| `*.yml` | `vincent@mahn.ke`, `user2@example.org` |
 
